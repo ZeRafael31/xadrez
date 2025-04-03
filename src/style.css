@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../image/charwpp.png");
-  background-size: contain;
+  background-color: #ff9100;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -35,6 +35,7 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 60px);
   border: rgb(0, 0, 0) solid 2px;
+  opacity: 85%;
 }
 
 .square {
@@ -48,5 +49,5 @@ body {
 }
 
 .white { background-color: #f3fecd; }
-.black { background-color: #ffbb00; }
+.black { background-color: #0059ff; }
 .highlight { background-color: rgb(157, 255, 0) !important; }
