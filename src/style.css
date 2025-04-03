@@ -1,29 +1,52 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #5c5c5c;
-    
-    margin: 0;
-  }
-  .chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 60px);
-    grid-template-columns: repeat(8, 60px);
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/charwpp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
-  }
-  .square {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    cursor: pointer;
-  }
-  .white { background-color: #dde2cc; }
-  .black { background-color: #f779b8; }
-  .highlight { background-color: rgb(0, 255, 157) !important; }
-  
+.title {
+  background-image: url("../image/title.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 100px;
+}
+
+.side-title {
+  display: none;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  border: rgb(0, 0, 0) solid 2px;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.white { background-color: #f3fecd; }
+.black { background-color: #ffbb00; }
+.highlight { background-color: rgb(157, 255, 0) !important; }
